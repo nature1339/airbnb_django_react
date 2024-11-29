@@ -1,0 +1,10 @@
+poetry shell
+python manage.py runserver
+python manage.py migrate
+
+ctrl break 안되서 -> ctrl c
+
+superuser
+nature
+nature1339@gmail.com
+1988nono@
