@@ -1,6 +1,8 @@
 poetry shell
 python manage.py runserver
 python manage.py migrate
+python manage.py startapp houses
+
 
 ctrl break 안되서 -> ctrl c
 
