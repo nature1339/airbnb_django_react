@@ -25,20 +25,21 @@ SECRET_KEY = "django-insecure-eru(09@rmltqa3v_w24l=$=nj$f6pn#qaztwhhlzxyigh2r_fy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
+CUSTOM_APPS = [
+    "houses.apps.HousesConfig",
+]
 # Application definition
 
-INSTALLED_APPS = [
+SYSTEM_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "houses.apps.HousesConfig"
 ]
+
+INSTALLED_APPS = SYSTEM_APPS + CUSTOM_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

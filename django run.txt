@@ -3,6 +3,7 @@ python manage.py runserver
 python manage.py migrate
 python manage.py startapp houses
 python manage.py makemigrations
+python manage.py migrate
 
 ctrl break 안되서 -> ctrl c
 
