@@ -27,6 +27,7 @@ DEBUG = True
 
 CUSTOM_APPS = [
     "houses.apps.HousesConfig",
+    "users.apps.UsersConfig"
 ]
 # Application definition
 
@@ -41,7 +42,7 @@ SYSTEM_APPS = [
 
 INSTALLED_APPS = SYSTEM_APPS + CUSTOM_APPS
 
-MIDDLEWARE = [
+MIDDLEWARE = [ 
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -123,3 +124,5 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTH_USER_MODEL, = "users.User"
