@@ -25,10 +25,7 @@ SECRET_KEY = "django-insecure-eru(09@rmltqa3v_w24l=$=nj$f6pn#qaztwhhlzxyigh2r_fy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CUSTOM_APPS = [
-    "houses.apps.HousesConfig",
-    "users.apps.UsersConfig"
-]
+CUSTOM_APPS = ["users.apps.UsersConfig"]
 # Application definition
 
 SYSTEM_APPS = [
@@ -42,7 +39,7 @@ SYSTEM_APPS = [
 
 INSTALLED_APPS = SYSTEM_APPS + CUSTOM_APPS
 
-MIDDLEWARE = [ 
+MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -125,4 +122,5 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AUTH_USER_MODEL, = "users.User"
+# Auth
+AUTH_USER_MODEL = "users.User"
