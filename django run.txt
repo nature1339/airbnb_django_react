@@ -6,6 +6,16 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py startapp users   -> app folder만듬
 python manage.py makemigrations
+python manage.py startapp rooms  -> app folder만듬
+
+config> settings>
+CUSTOM_APPS = [
+    "users.apps.UsersConfig",
+    "rooms.apps.RoomsConfig",
+]
+
+rooms> models>
+
 
 ctrl break 안되서 -> ctrl c
 
@@ -30,3 +40,5 @@ python manage.py migrate
 
  python manage.py makemigrations
 No changes detected
+
+42723682

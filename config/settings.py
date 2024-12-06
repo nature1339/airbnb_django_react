@@ -25,7 +25,10 @@ SECRET_KEY = "django-insecure-eru(09@rmltqa3v_w24l=$=nj$f6pn#qaztwhhlzxyigh2r_fy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CUSTOM_APPS = ["users.apps.UsersConfig"]
+CUSTOM_APPS = [
+    "users.apps.UsersConfig",
+    "rooms.apps.RoomsConfig",
+]
 # Application definition
 
 SYSTEM_APPS = [
