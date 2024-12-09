@@ -1,12 +1,18 @@
 poetry shell
 python manage.py runserver
 python manage.py migrate
-python manage.py startapp houses
+
+
+ houses
 python manage.py makemigrations
 python manage.py migrate
 python manage.py startapp users   -> app folder만듬
 python manage.py makemigrations
 python manage.py startapp rooms  -> app folder만듬
+python manage.py makemigrations
+
+python manage.py startapp common
+
 
 config> settings>
 CUSTOM_APPS = [
@@ -50,5 +56,8 @@ Visual Studio Code(VSCode)에서 멀티커서 사용하기 VS Code에서 여러 
  Multiple selections(multi-cursor) 사용법 내용 Alt + Click 클릭한 부분에 커서를 추가함 Ctrl + Alt + ↓(↑) 현재 커서 기준 위, 아래에 커서를 추가함(방향키 이용)
  Ctrl + D 현재 커서가 위치한 단어를 선택하고, 일치하는 다음 단어도 하나하나씩 선택함 Ctrl + Shift + L Ctrl + D 방식은 하나하나 선택하는 방식이라면, 이 방식은 한 번에 모든 것을 선택해줌
  Shift + Alt + 드래그 Column (box) selection, 현재 커서 기준 드래그한 곳까지 다중 선택 마우스 휠 클릭 + 드래그 Colu..
+
+
+
 
 

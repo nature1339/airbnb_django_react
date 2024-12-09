@@ -26,7 +26,6 @@ SECRET_KEY = "django-insecure-eru(09@rmltqa3v_w24l=$=nj$f6pn#qaztwhhlzxyigh2r_fy
 DEBUG = True
 
 CUSTOM_APPS = [
-    "common.apps.CommonConfig",
     "users.apps.UsersConfig",
     "rooms.apps.RoomsConfig",
 ]
@@ -39,7 +38,6 @@ SYSTEM_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "common",
 ]
 
 INSTALLED_APPS = SYSTEM_APPS + CUSTOM_APPS
