@@ -39,6 +39,7 @@ SYSTEM_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "common",
 ]
 
 INSTALLED_APPS = SYSTEM_APPS + CUSTOM_APPS
